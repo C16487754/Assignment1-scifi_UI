@@ -1,9 +1,14 @@
+class HUD
+{
+
+   
+  
+}
+
 void drawHUD()
 {
-  strokeWeight(1);
-  stroke(255);
-  float border = width * 0.1f;
-  
+    strokeWeight(1);
+     stroke(255);
  
   //hud
   int x=6;
@@ -63,10 +68,7 @@ void drawHUD()
        line(width-bord, height, w4*3, dashh*3);
        
        
-//window
-line(0, border, width, border);
-line(w4*3, len*3, width, w4);
-line(w4, len*3, 0, w4);
+
 
    
 }
@@ -75,3 +77,4 @@ line(w4, len*3, 0, w4);
 
    
    
+  
