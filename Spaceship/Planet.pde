@@ -35,6 +35,27 @@ class Planet
     {
       planetH=planetH-10;
     }
+    
+    
+    if(planetW>width+200)
+    {
+     planetW=-width; 
+    }
+    
+    if(planetW<-width-50)
+    {
+     planetW = width+100; 
+    }
+    
+    if(planetH<-height-300)
+    {
+     planetH = height; 
+    }
+    
+    if(planetH>height+300)
+    {
+     planetH = -height; 
+    }
 
   }
   
