@@ -100,5 +100,33 @@ boolean b5clicked = false;
         b3.c = color(0,255,0);
       }
    }
+   
+    float b4x=600;
+   float b4y=50;
+   if (mouseX >b4x-50 && mouseX <b4x+50
+    && mouseY >b4y-25 && mouseY <b4y+25)
+   {
+      
+      if(b4clicked)
+      {
+
+      println("radar disabled");
+
+              b4clicked= false;
+
+      b4.c = color(0,255,0);
+      }
+      else
+      {
+        println("radar on");
+
+
+        b4.c = color(0,255,0);
+        b4clicked = true;
+        b4.c = color(255,0,0);
+
+        
+      }
+   }
 
 }
