@@ -128,5 +128,29 @@ boolean b5clicked = false;
         
       }
    }
+   
+   
+    float b5x = 650;
+      float b5y = 700;
+      
+      //autopilot
+      if (mouseX >b5x-30 && mouseX <b5x+30
+    && mouseY >b5y-30 && mouseY <b5y+30)
+   {
+      
+      if(b5clicked)
+      {
+      println("boost off");
+      b5clicked= false;
+
+      b5.c = color(255,0,0);
+      }
+      else
+      {
+        println("boost on");
+        b5clicked = true;
+        b5.c = color(0,255,0);
+      }
+   }
 
 }
