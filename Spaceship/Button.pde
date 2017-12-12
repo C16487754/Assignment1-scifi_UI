@@ -77,5 +77,28 @@ boolean b5clicked = false;
            line(3*width/4, 3*height/4, width/2,(height/2.5)+20);
            line(width/4, 3*height/4, width/2, (height/2.5)+20);
       }
+      
+      
+        float b3x = 450;
+      float b3y = 750;
+      
+      //autopilot
+      if (mouseX >b3x-50 && mouseX <b3x+50
+    && mouseY >b3y-25 && mouseY <b3y+25)
+   {
+      
+      if(b3clicked)
+      {
+      println("autopilot off");
+      b3clicked= false;
+      b3.c = color(255,0,0);
+      }
+      else
+      {
+        println("autopilot on");
+        b3clicked = true;
+        b3.c = color(0,255,0);
+      }
+   }
 
 }
