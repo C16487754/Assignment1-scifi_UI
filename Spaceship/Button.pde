@@ -61,4 +61,21 @@ boolean b5clicked = false;
              b2.c = color(0,255,0);
       }
     }
+    
+        float b2x = 450;
+    float b2y= 650;
+    
+          
+ 
+   if (mouseX >b2x-50 && mouseX <b2x+50
+    && mouseY >b2y-25 && mouseY <b2y+25  && b1clicked)
+    
+
+    {
+      println("fire");
+           stroke(0,255,0);
+           line(3*width/4, 3*height/4, width/2,(height/2.5)+20);
+           line(width/4, 3*height/4, width/2, (height/2.5)+20);
+      }
+
 }
