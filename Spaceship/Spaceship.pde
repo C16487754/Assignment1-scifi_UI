@@ -1,7 +1,13 @@
+float x = width/1.75;
+float y = height/15;
 color green = color(0,255,0);
 color red = color(255,0,0);
 color blue = color(0,0,255);
 color white = color(255,255,255);
+
+
+Button b1 = new Button( 500,50,100, 50,"Weapons \nSystems", color(255,0,0));
+
 
 Planet p1 = new Planet(500, 500, 300, red);
 Planet p2 = new Planet(200, 300, 30, blue);
@@ -9,7 +15,9 @@ Planet p3 = new Planet(400, 30, 60, green);
 Planet p4 = new Planet(1000, 700, 80, white);
 void setup()
 {
+
       
+
  frameRate(60);
  size(1200, 800 );
  background(0);
@@ -19,10 +27,12 @@ void setup()
       stars[i] = new Star(); 
      }
      
+
 }
 
 Star[] stars = new Star[2000];
 Planet[] planets = new Planet[1];
+
 
 //key functions
 boolean keys[] = new boolean[1024];
@@ -70,11 +80,13 @@ void draw()
   }
   popMatrix();
   
-{
-  drawHUD();
-}
+  
   drawWindow();
   
+  
   drawDash();
+  //draws the buttons
+  b1.show();
+
 
 }
