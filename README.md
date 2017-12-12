@@ -1,9 +1,10 @@
 # Assignment1-scifi_UI
 Assignment 1
 
-https://www.youtube.com/embed/A057yzMpDjw
+[![CA 1](http://img.youtube.com/vi/A057yzMpDjw/0.jpg)](http://www.youtube.com/watch?v=A057yzMpDjw"Video Title")
 
-Keys to control ship :
+
+# Keys to control ship :
 w : move forward
 a : move left
 d: move right
@@ -14,7 +15,7 @@ Click on buttons to activate different parts of the ship
 
 To shoot the guns click "weapon systems" then click "fire"
 
-Features:
+# Features:
 
 String list of commands preformed of user displayed to a screen inside of the ship.
 
