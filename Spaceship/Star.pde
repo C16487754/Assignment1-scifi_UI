@@ -39,6 +39,10 @@ if (checkKey('d'))
   {
     y=y-10;
   }
+  if(b3clicked)
+  {
+    z=z-5;
+  }
   
   if(z<1)
   {

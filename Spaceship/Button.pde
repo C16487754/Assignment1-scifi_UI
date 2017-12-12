@@ -29,7 +29,9 @@ class Button
   textAlign(CENTER, CENTER);
   text( text, buttonX, buttonY);
 }
+
 }
+
 
 boolean b1clicked = false;
 boolean b2clicked =false;
@@ -49,6 +51,7 @@ boolean b5clicked = false;
       lock = false;
       println("weapon systems off");
       b1clicked= false;
+      commands.append("Weapon systems disabled");
       b1.c = color(255,0,0);
           b2.c = color(255,0,0);
       }
@@ -57,12 +60,13 @@ boolean b5clicked = false;
         println("weapons systems on");
         lock = true;
         b1clicked = true;
+        commands.append("Weapon systems engaged");
             b1.c = color(0,255,0);
              b2.c = color(0,255,0);
       }
     }
-    
-        float b2x = 450;
+
+    float b2x = 450;
     float b2y= 650;
     
           
@@ -73,13 +77,14 @@ boolean b5clicked = false;
 
     {
       println("fire");
+           sound.play();
            stroke(0,255,0);
            line(3*width/4, 3*height/4, width/2,(height/2.5)+20);
            line(width/4, 3*height/4, width/2, (height/2.5)+20);
+           commands.append("Weapon fired");
       }
       
-      
-        float b3x = 450;
+      float b3x = 450;
       float b3y = 750;
       
       //autopilot
@@ -91,17 +96,19 @@ boolean b5clicked = false;
       {
       println("autopilot off");
       b3clicked= false;
+      commands.append("Autopilot disabled");
       b3.c = color(255,0,0);
       }
       else
       {
         println("autopilot on");
         b3clicked = true;
+        commands.append("Autopilot engaged");
         b3.c = color(0,255,0);
       }
    }
-   
-    float b4x=600;
+  
+   float b4x=600;
    float b4y=50;
    if (mouseX >b4x-50 && mouseX <b4x+50
     && mouseY >b4y-25 && mouseY <b4y+25)
@@ -111,16 +118,16 @@ boolean b5clicked = false;
       {
 
       println("radar disabled");
-
+      commands.append("radar engaged");
               b4clicked= false;
-
+      radar1.c = color(0,255,0);
       b4.c = color(0,255,0);
       }
       else
       {
         println("radar on");
-
-
+        commands.append("Radar disabled");
+        radar1.c = color(0);
         b4.c = color(0,255,0);
         b4clicked = true;
         b4.c = color(255,0,0);
@@ -130,7 +137,7 @@ boolean b5clicked = false;
    }
    
    
-    float b5x = 650;
+         float b5x = 650;
       float b5y = 700;
       
       //autopilot
@@ -142,15 +149,17 @@ boolean b5clicked = false;
       {
       println("boost off");
       b5clicked= false;
-
+      commands.append("Boost disabled");
       b5.c = color(255,0,0);
       }
       else
       {
         println("boost on");
         b5clicked = true;
+        commands.append("Boost engaged");
         b5.c = color(0,255,0);
       }
    }
+   
 
 }
