@@ -1,8 +1,7 @@
 # Assignment1-scifi_UI
 Assignment 1
 
-[![CA 1](http://img.youtube.com/vi/A057yzMpDjw/0.jpg)](http://www.youtube.com/watch?v=A057yzMpDjw"Video Title")
-
+https://www.youtube.com/watch?v=A057yzMpDjw
 
 # Keys to control ship :
 w : move forward
