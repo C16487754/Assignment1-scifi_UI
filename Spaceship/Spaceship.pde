@@ -7,6 +7,7 @@ color white = color(255,255,255);
 
 
 Button b1 = new Button( 500,50,100, 50,"Weapons \nSystems", color(255,0,0));
+Button b2 = new Button( 450, 650,50, 50, "Fire\n weapons", color(255,0,0));
 
 
 Planet p1 = new Planet(500, 500, 300, red);
@@ -87,6 +88,6 @@ void draw()
   drawDash();
   //draws the buttons
   b1.show();
-
+  b2.show();
 
 }
