@@ -5,9 +5,13 @@ https://www.youtube.com/watch?v=A057yzMpDjw
 
 # Keys to control ship :
 w : move forward
+
 a : move left
+
 d: move right
+
 UP : move up
+
 DOWN : move down
 
 Click on buttons to activate different parts of the ship
