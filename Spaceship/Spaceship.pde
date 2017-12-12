@@ -11,7 +11,7 @@ void setup()
      }
 }
 
-Star[] stars = new Star[800];
+Star[] stars = new Star[2000];
 
 void draw()
 {
@@ -30,6 +30,7 @@ void draw()
   popMatrix();
     drawWindow();
      drawHUD();
+     slider();
   
   
   
@@ -52,4 +53,16 @@ void drawWindow()
     
     //line(pos, height-border, width - border, height-border);
    // line(pos, border, width-border, border);
+}
+
+
+void slider()
+{
+  fill(0);
+  rect(width/2, 3*(height/4), 50, 100);
+  fill(255);
+  noStroke();
+  ellipse(width/2+25,3*(height/4), 30,30);
+  
+  
 }
