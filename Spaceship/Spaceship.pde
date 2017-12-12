@@ -4,7 +4,7 @@ color green = color(0,255,0);
 color red = color(255,0,0);
 color blue = color(0,0,255);
 color white = color(255,255,255);
-
+StringList commands;
 
 Button b1 = new Button( 500,50,100, 50,"Weapons \nSystems", color(255,0,0));
 Button b2 = new Button( 450, 650,50, 50, "Fire\n weapons", color(255,0,0));
@@ -31,7 +31,7 @@ void setup()
      {
       stars[i] = new Star(); 
      }
-     
+     commands = new StringList();
 
 }
 
@@ -85,8 +85,7 @@ void draw()
   }
   popMatrix();
   
-  
-  drawWindow();
+    drawWindow();
   
   
   drawDash();
@@ -96,5 +95,7 @@ void draw()
     b3.show();
   b4.show();
   b5.show();
+  
+   drawShipLog();
 
 }
