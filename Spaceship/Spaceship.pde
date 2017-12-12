@@ -8,6 +8,10 @@ color white = color(255,255,255);
 
 Button b1 = new Button( 500,50,100, 50,"Weapons \nSystems", color(255,0,0));
 Button b2 = new Button( 450, 650,50, 50, "Fire\n weapons", color(255,0,0));
+Button b3 = new Button( 450, 750, 50,50, "Auto\nPilot", color(255,0,0));
+Button b4 = new Button(600, 50, 50, 50, "Radar", color(0,255,0));
+Button b5 = new Button(650, 700, 60,60, "Boost", color(255,0,0));
+
 
 
 Planet p1 = new Planet(500, 500, 300, red);
@@ -89,5 +93,8 @@ void draw()
   //draws the buttons
   b1.show();
   b2.show();
+    b3.show();
+  b4.show();
+  b5.show();
 
 }
