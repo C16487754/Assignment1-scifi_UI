@@ -1,7 +1,3 @@
-//Student name: Calvin Ho
-//Student number: C16487754
-
-
 void setup()
 {
  
@@ -15,37 +11,45 @@ void setup()
      }
 }
 
-Star[] stars = new Star[400];
+Star[] stars = new Star[800];
 
 void draw()
 {
   
 
   background(0);
-    drawWindow();
-     drawHUD();
-  translate(width/2, height/2);
+  pushMatrix();
+  translate(width/2,height/2);
   for(int i=0;i<stars.length; i++)
   {
  
    stars[i].update();
-   stars[i].display();
+   stars[i].show();
     
   }
+  popMatrix();
+    drawWindow();
+     drawHUD();
   
-    
   
+  
+   
 
 }
 void drawWindow()
 {
-  //window
-    float border = width * 0.1f;
-     strokeWeight(10);
-   stroke(126);
-      float len = height*.25;
-   float w4 = width/4;//width/4
-line(0, border, width, border);
-line(w4*3, len*3, width, w4);
-line(w4, len*3, 0, w4);
+    stroke(255);
+  float border = width * 0.1f;
+  float b2 = width*.02f;
+
+
+  float pos = border;
+ 
+
+    
+   // line(b2, border, b2, height - border);
+   // line(width-b2, border, width-b2, height-border);
+    
+    //line(pos, height-border, width - border, height-border);
+   // line(pos, border, width-border, border);
 }

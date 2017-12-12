@@ -7,14 +7,14 @@ Star()
 {
  x= random(-width, width);
   y=random(-height,height);
-  z=random(width); 
+  z=random(width);
 
 }
 
 
 void update()
 {
-  z=z-3;
+  z=z-1;
   if(z<1)
   {
    z= width; 
@@ -23,7 +23,7 @@ void update()
   }
  
 }
-void display()
+void show()
 {
  fill(255);
  noStroke();
